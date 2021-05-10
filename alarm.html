@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="alarm.css">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="show">
+      <div>Please answer this question to stop/clear alarm</div>
+      <span id="question"></span>
+      <input type="text" id="res" placeholder="Your answer here" />
+      <span class="wrong">Oops you gave wrong answer, try again</span>
+      <button id="submit" onclick="sub()">Submit</button>
+    </div>
+
+    <div class="container">
+      <div id="timer"></div>
+      <div id="time"></div>
+      <select id="hour"></select>
+      <select id="min"></select>
+      <select id="sec"></select>
+      <select id="pmam">
+        <option>AM</option>
+        <option>PM</option>
+      </select>
+
+      <button id="btn">Set Alarm</button>
+    </div>
+    <script src="alarm.js"></script>
+  </body>
+</html>

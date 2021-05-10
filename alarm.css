@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: wheat;
+}
+
+.container {
+  font-size: larger;
+  margin-top: 20%;
+}
+
+#show {
+  display: none;
+  padding: 10px;
+  position: absolute;
+  background-color: #ccc;
+  border: 2px solid gray;
+  flex-direction: column;
+  transition: 2s ease-in-out;
+}
+
+#question {
+  min-width: 200px;
+  min-height: 2px;
+  margin: 10px 5px;
+  padding: 10px;
+  background-color: whitesmoke;
+  position: relative;
+}
+
+#res {
+  max-width: 120px;
+  display: inline-block;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+#submit {
+  max-width: fit-content;
+  display: inline-block;
+  position: relative;
+}
+#timer {
+  font-size: 40px;
+  margin-left: 20px;
+}
+.wrong {
+  display: none;
+  color: tomato;
+  margin: 5px 0 10px;
+  transition: inherit;
+}
